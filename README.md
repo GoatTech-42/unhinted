@@ -26,7 +26,7 @@ fabric loader 0.15.10 or newer, java 21 or newer, minecraft 1.20.5 to 26.2. if t
 
 ## build
 
-`./build.sh` (jdk 21 or newer, curl). mit license.
+`sh build.sh` (jdk 21 or newer, curl). mit license.
 
 ## also
 
