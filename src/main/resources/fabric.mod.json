@@ -6,7 +6,7 @@
   "description": "Turns off TrueType font hinting for resource pack fonts, so a font's own hinting code can't run.",
   "authors": ["GoatTech-42"],
   "license": "MIT",
-  "icon": "assets/unhinted/icon.png",
+  "icon": "assets/unhinted/2-icon.png",
   "environment": "client",
   "mixins": ["unhinted.mixins.json"],
   "depends": {
