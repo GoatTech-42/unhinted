@@ -1,0 +1,3 @@
+vanilla flags=4194312 modded flags=4194314 NO_HINTING bit set=true
+9px hinted-hash=-4771530616942008005 unhinted-hash=1265718671770191595 same=false
+16px hinted-hash=-3135424099144162886 unhinted-hash=-2643885894942366618 same=false
