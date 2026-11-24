@@ -12,11 +12,11 @@ adds the no-hinting flag to every glyph load for truetype fonts. small text may 
 
 ## is it the real fix?
 
-no. mojang's fix is the real one. minecraft 26.3 now ships a patched freetype (2.15.0). restart your launcher fully to get it. this mod is for older versions that have no fix: 1.20.5 to 26.2.
+no. mojang's fix is the real one. minecraft 26.3 now ships a patched freetype (2.15.0). restart your launcher fully to get it. this mod is for older versions that have no fix: 1.20.5 to 1.21.11 and 26.1 to 26.2.
 
 ## versions
 
-fabric loader 0.15.10 or newer, java 21 or newer, minecraft 1.20.5 to 26.2. if the hook isn't found on a version, the game stops with an error on startup instead of running unprotected. 26.3 and 26.4 snapshots load it too, but you don't need it there. client only. no fabric api needed.
+fabric loader 0.15.10 or newer, java 21 or newer, minecraft 1.20.5 to 1.21.11, 26.1, 26.1.1, 26.1.2 and 26.2 (26.3 also works, where you don't need it). if the hook isn't found on a version, the game stops with an error on startup instead of running unprotected. these are the same versions listed on modrinth. client only. no fabric api needed.
 
 ## what was tested
 
