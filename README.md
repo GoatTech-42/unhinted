@@ -1,33 +1,27 @@
-# unhinted
-
-a small fabric client mod. it turns off truetype hinting for resource pack fonts.
+patches the Minecraft2Shell exploit on older unpatched versions
 
 ## why
 
-hinting is code inside a font file that the font library runs when it draws a letter. a bug in that step (minecraft2shell, freetype #1419) let a crafted font run code on your pc. with hinting off, that code never runs.
+hinting is a small program stored inside a font file. the font library runs it when it draws a letter. a bug in that step (the minecraft2shell bug, freetype issue 1419) let a crafted font in a resource pack run code on your pc. with hinting off, that code never runs.
+
+## is this the real fix?
+
+no. mojang's fix is the real fix. minecraft 26.3 now ships a patched freetype, so on 26.3 you only need to fully restart your launcher. you don't need this mod there.
+
+this mod is a stopgap for older versions that don't have a fix: 1.20.5 to 26.2.
 
 ## what it does
 
-adds the no-hinting flag to every glyph load for truetype fonts. small text may look a little softer.
-
-## is it the real fix?
-
-no. mojang's fix is the real one. minecraft 26.3 now ships a patched freetype (2.15.0). restart your launcher fully to get it. this mod is for older versions that have no fix: 1.20.5 to 1.21.11 and 26.1 to 26.2.
+it adds the no-hinting flag to every glyph load for truetype fonts. small text can look a little softer.
 
 ## versions
 
-fabric loader 0.15.10 or newer, java 21 or newer, minecraft 1.20.5 to 1.21.11, 26.1, 26.1.1, 26.1.2 and 26.2 (26.3 also works, where you don't need it). if the hook isn't found on a version, the game stops with an error on startup instead of running unprotected. these are the same versions listed on modrinth. client only. no fabric api needed.
+minecraft 1.20.5 to 1.21.11 and 26.1 to 26.2. 26.3 loads it too but doesn't need it. fabric loader 0.15.10 or newer, java 21 or newer. client only. no fabric api needed.
 
-## what was tested
-
-- the hook point (one FT_Load_Glyph call, same flags) exists in the font class of every release from 1.20.5 to 1.21.11 and 26.1 to 26.3, checked by reading the real client jars.
-- the flag change was checked with a headless freetype run (the glyph output changes when hinting is off).
-- not tested: the public exploit. not tested in a running game on every version.
-
-## build
-
-`sh build.sh` (jdk 21 or newer, curl). mit license.
+if the font code isn't found on a version, the game stops with an error at startup. it won't run unprotected.
 
 ## also
 
-only trust resource packs from servers you trust. you can set server resource packs to disabled in the server's edit screen.
+only accept resource packs from servers you trust. you can set server resource packs to disabled in a server's edit screen.
+
+this mod was written with the help of ai. source is on github under the mit license: https://github.com/GoatTech-42/unhinted
