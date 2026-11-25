@@ -18,7 +18,7 @@ it adds the no-hinting flag to every glyph load for truetype fonts. small text c
 
 minecraft 1.20.5 to 1.21.11 and 26.1 to 26.2. 26.3 loads it too but doesn't need it. fabric loader 0.15.10 or newer, java 21 or newer. client only. no fabric api needed.
 
-if the font code isn't found on a version, the game stops with an error at startup. it won't run unprotected.
+if the font code isn't found on a version, the game stops with an error at startup. it won't run unprotected. tested: the mod loaded in a real headless fabric client with a ttf font pack on every listed version, and the game reached the title screen with no crash.
 
 ## also
 
