@@ -7,5 +7,5 @@ rm -rf out && mkdir out
 javac --release 21 -cp mixin.jar -d out $(find src/main/java -name '*.java')
 cp -r src/main/resources/* out/
 cp LICENSE out/
-jar --create --file unhinted-1.0.0.jar -C out .
-echo built unhinted-1.0.0.jar
+jar --create --file unhinted-1.0.1.jar -C out .
+echo built unhinted-1.0.1.jar
