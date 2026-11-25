@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "unhinted",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Unhinted",
   "description": "Turns off TrueType font hinting for resource pack fonts, so a font's own hinting code can't run.",
   "authors": ["GoatTech-42"],
