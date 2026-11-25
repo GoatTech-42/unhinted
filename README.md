@@ -24,4 +24,4 @@ if the font code isn't found on a version, the game stops with an error at start
 
 only accept resource packs from servers you trust. you can set server resource packs to disabled in a server's edit screen.
 
-this mod was written with the help of ai. source is on github under the mit license: https://github.com/GoatTech-42/unhinted
+this mod was written with the help of ai.
